@@ -12,13 +12,13 @@ Sub-questions:
 ## Team and responsibilities
 | Person | Responsibilities |
 |---|---|
-| Person A: [name] | Hive setup, joins and filtering, data log, R cleaning, exploratory analysis |
-| Person B: [name] | Clustering, logistic regression, random forest, model evaluation |
+| Person A: Sylvia | Hive setup, joins and filtering, data log, R cleaning, exploratory analysis |
+| Person B: Adrian | Clustering, logistic regression, random forest, model evaluation |
 | Both | Introduction, Conclusion, Summary, unexpected findings, final edit |
 
 ## Data
 Victorian Road Crash Data (2012-01-01 to 2024-09-30), 9 CSV tables, about 168 MB in total.
-Raw files are **not committed** to this repo. Download them from [shared drive link] into `data/raw/`.
+Raw files are **not committed** to this repo. Download them from https://liveswinburneeduau-my.sharepoint.com/:f:/r/personal/106064277_student_swin_edu_au/Documents/Big%20Data%20HD%20Project!/COS80023%20crash%20data?d=wa0ef3d96307b4731bcc9655f8be5fe3f&csf=1&web=1&e=NCzYqk into `data/raw/`.
 
 ## Folder structure
 | Folder | What goes in it |
