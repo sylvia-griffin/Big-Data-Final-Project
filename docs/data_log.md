@@ -44,6 +44,7 @@ Write down any judgement call and why you made it.
 | 02/11/2026 | Do joining and filtering in R instead of Hive on HDInsight | No access to the COS80023 Azure subscription; tutor (Afzaal) confirmed R is fine | Sylvia, tutor |
 | 02/11/2026 | Treat tare weight of 0 kg as missing | A vehicle cannot weigh 0 kg; done in `R/01_prepare_data.R` | Sylvia |
 | 02/11/2026 | Missing or invalid values set to NA, not removed | Keeps the full 194,061 people; each analysis uses whoever has the values it needs | Sylvia |
+| 02/11/2026 | Sensitivity check including seatbelt unknown (code 9) | Gap remains (ratio 1.20 vs 1.25 for belted only), so excluding unknowns does not drive the result | Sylvia |
 | | | | |
 
 ## Questions to check
