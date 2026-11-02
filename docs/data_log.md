@@ -22,11 +22,11 @@ Counts come from `R/01_prepare_data.R` (it prints them and saves them to `output
 
 | # | Date | Who | Step | Tool | Rows before | Rows after | Rows removed | Reason |
 |---:|---|---|---|---|---:|---:|---:|---|
-| 1 | | Sylvia | Join person + vehicle + accident (inner join on vehicle) | R | 425,352 | 408,264 | 17,088 | People with no vehicle (mostly pedestrians) are not occupants |
-| 2 | | Sylvia | Keep drivers (D) and left-front passengers (LF) | R | 408,264 | 363,984 | 44,280 | Research focus is front-seat occupants |
-| 3 | | Sylvia | Keep cars, station wagons and utes (types 01, 02, 04) | R | 363,984 | 288,823 | 75,161 | Light passenger vehicles with comparable safety design |
-| 4 | | Sylvia | Keep sex = M or F | R | 288,823 | 282,399 | 6,424 | Sex is the main variable; unknown cannot be used |
-| 5 | | Sylvia | Keep seatbelt worn (code 1) | R | 282,399 | 194,061 | 88,338 | Removes the effect of belt use on injury. Belt = 1 or 9 kept separately for the sensitivity check |
+| 1 | 02/11/2026 | Sylvia | Join person + vehicle + accident (inner join on vehicle) | R | 425,352 | 408,264 | 17,088 | People with no vehicle (mostly pedestrians) are not occupants |
+| 2 | 02/11/2026 | Sylvia | Keep drivers (D) and left-front passengers (LF) | R | 408,264 | 363,984 | 44,280 | Research focus is front-seat occupants |
+| 3 | 02/11/2026 | Sylvia | Keep cars, station wagons and utes (types 01, 02, 04) | R | 363,984 | 288,823 | 75,161 | Light passenger vehicles with comparable safety design |
+| 4 | 02/11/2026 | Sylvia | Keep sex = M or F | R | 288,823 | 282,399 | 6,424 | Sex is the main variable; unknown cannot be used |
+| 5 | 02/11/2026 | Sylvia | Keep seatbelt worn (code 1) | R | 282,399 | 194,061 | 88,338 | Removes the effect of belt use on injury. Belt = 1 or 9 kept separately for the sensitivity check |
 | 6 | | | Handle missing or zero tare weight | R | | | | |
 | 7 | | | Handle missing or invalid vehicle year | R | | | | |
 | | | | | | | | | |
