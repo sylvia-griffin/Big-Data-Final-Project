@@ -1,0 +1,3 @@
+cluster_id,speed_band,crash_type,impact,road_context,lighting
+1,60-70,Collision with vehicle,Front,Intersection,Daylight
+2,60-70,Collision with vehicle,Front,Non-intersection,Daylight

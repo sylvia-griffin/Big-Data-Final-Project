@@ -1,0 +1,5 @@
+cluster_id,cluster_name,sex,people,ksi_count,ksi_pct
+1,C1: intersection,Male,48801,5612,11.499764349091206
+1,C1: intersection,Female,50943,8540,16.76383408907995
+2,C2: non-intersection,Male,43332,8214,18.955967875934643
+2,C2: non-intersection,Female,39455,8437,21.3838550247117

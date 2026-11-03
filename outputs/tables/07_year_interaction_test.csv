@@ -1,0 +1,2 @@
+term,log_or_change_per_decade,ratio_of_odds_ratios_per_decade,ci_low,ci_high,wald_chisq,df,p_value
+sexFemale:vehicle_year_10,0.08897388005224023,1.0930521054895646,1.054554299185366,1.1329553217298665,23.65405572918103,1,1.1530264956306557e-6

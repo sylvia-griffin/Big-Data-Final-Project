@@ -1,0 +1,9 @@
+model,threshold,outcome,actual,predicted,occupants,actual_class_pct
+Logistic regression,0.1191636918133009,True negative,Non-KSI,Non-KSI,15511,52.86098899226391
+Logistic regression,0.1191636918133009,False negative,KSI,Non-KSI,1219,20.446159007044617
+Logistic regression,0.1191636918133009,False positive,Non-KSI,KSI,13832,47.13901100773609
+Logistic regression,0.1191636918133009,True positive,KSI,KSI,4743,79.55384099295539
+Random forest,0.1164066362899325,True negative,Non-KSI,Non-KSI,15537,52.94959615581229
+Random forest,0.1164066362899325,False negative,KSI,Non-KSI,1215,20.379067427037906
+Random forest,0.1164066362899325,False positive,Non-KSI,KSI,13806,47.05040384418771
+Random forest,0.1164066362899325,True positive,KSI,KSI,4747,79.62093257296209

@@ -1,0 +1,11 @@
+variable,interpretation
+sex,Female versus Male
+age_band,Versus age 16-25
+seat,Front passenger versus Driver
+speed_band,Versus speed zone 50 or less
+crash_configuration,Versus Rear-end
+impact,Versus Front impact
+vehicle_count_group,Versus 1 vehicle; 3+ combines crashes with three or more vehicles
+crash_year,Versus crash year 2012
+vehicle_year_10,Per 10 newer manufacturing years; centred at 2010
+tare_500kg,Per 500 kg higher tare weight; centred at 1500 kg

@@ -1,0 +1,15 @@
+crash_configuration,sex,occupants,ksi_cases,observed_ksi_pct
+Rear-end,Male,22803,1721,7.547252554488444
+Rear-end,Female,23493,2838,12.080194100370322
+Head-on (not overtaking),Male,4818,1358,28.18596928185969
+Head-on (not overtaking),Female,3744,1342,35.8440170940171
+Adjacent-direction intersection,Male,18301,2325,12.704223812906399
+Adjacent-direction intersection,Female,19957,3725,18.665130029563564
+Opposing-direction turning,Male,10735,1161,10.815090824406148
+Opposing-direction turning,Female,11588,2116,18.260269244045567
+Run-off-road,Male,11052,4436,40.13753166847629
+Run-off-road,Female,8453,3499,41.39358807523956
+Loss of control on carriageway,Male,364,61,16.758241758241756
+Loss of control on carriageway,Female,277,34,12.274368231046932
+Other known configurations,Male,20257,2176,10.741965740237942
+Other known configurations,Female,19611,2838,14.471470093314975

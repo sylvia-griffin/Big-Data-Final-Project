@@ -1,0 +1,17 @@
+scenario,sex,people,ksi_count,ksi_pct
+Adjacent-direction intersection,Male,20031,2483,12.39578653087714
+Adjacent-direction intersection,Female,21683,3965,18.286215007148456
+Head-on (not overtaking),Male,5401,1471,27.235697093130902
+Head-on (not overtaking),Female,4111,1442,35.07662369253223
+Loss of control on carriageway,Male,488,76,15.573770491803279
+Loss of control on carriageway,Female,351,46,13.105413105413106
+Opposing-direction turning,Male,11677,1226,10.4992720733065
+Opposing-direction turning,Female,12523,2251,17.974926135909925
+Other known configurations,Male,22649,2373,10.47728376528765
+Other known configurations,Female,21784,3037,13.941424899008446
+Rear-end,Male,25198,1841,7.30613540757203
+Rear-end,Female,25856,3004,11.618193069306932
+Run-off-road,Male,12646,4994,39.4907480626285
+Run-off-road,Female,9600,3892,40.541666666666664
+Unknown (DCA 199),Male,29,2,6.896551724137931
+Unknown (DCA 199),Female,34,3,8.823529411764707

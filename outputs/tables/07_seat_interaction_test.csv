@@ -1,0 +1,2 @@
+term,log_odds,robust_se,passenger_driver_ratio_of_sex_odds_ratios,ci_low,ci_high,p_value,wald_chisq,df
+sexFemale:seatFront passenger,0.18761703501442534,0.040179315223397044,1.2063714288569294,1.1150140706539995,1.3052140440781168,3.019438468803183e-6,21.80416576819113,1

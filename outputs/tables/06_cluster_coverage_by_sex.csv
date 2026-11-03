@@ -1,0 +1,5 @@
+cluster_status,sex,people,ksi_count,ksi_pct
+Assigned,Male,92133,13826,15.006566593945708
+Assigned,Female,90398,16977,18.780282749618355
+Missing clustering features,Male,5986,640,10.691613765452724
+Missing clustering features,Female,5544,663,11.95887445887446

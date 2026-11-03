@@ -1,0 +1,17 @@
+model,rule,threshold,outcome,actual,predicted,occupants,actual_class_pct
+Logistic regression,Training OOF Youden,0.16198451041588202,True negative,Non-KSI,Non-KSI,20353,69.36236921923457
+Logistic regression,Training OOF Youden,0.16198451041588202,False negative,KSI,Non-KSI,2007,33.66320026836632
+Logistic regression,Training OOF Youden,0.16198451041588202,False positive,Non-KSI,KSI,8990,30.63763078076543
+Logistic regression,Training OOF Youden,0.16198451041588202,True positive,KSI,KSI,3955,66.33679973163368
+Logistic regression,Fixed 0.5,0.5,True negative,Non-KSI,Non-KSI,28754,97.9927069488464
+Logistic regression,Fixed 0.5,0.5,False negative,KSI,Non-KSI,5332,89.43307614894331
+Logistic regression,Fixed 0.5,0.5,False positive,Non-KSI,KSI,589,2.007293051153597
+Logistic regression,Fixed 0.5,0.5,True positive,KSI,KSI,630,10.566923851056693
+Random forest,Training OOF Youden,0.1761180349373565,True negative,Non-KSI,Non-KSI,20913,71.27083120335344
+Random forest,Training OOF Youden,0.1761180349373565,False negative,KSI,Non-KSI,2068,34.686346863468636
+Random forest,Training OOF Youden,0.1761180349373565,False positive,Non-KSI,KSI,8430,28.729168796646558
+Random forest,Training OOF Youden,0.1761180349373565,True positive,KSI,KSI,3894,65.31365313653137
+Random forest,Fixed 0.5,0.5,True negative,Non-KSI,Non-KSI,28821,98.22104079337491
+Random forest,Fixed 0.5,0.5,False negative,KSI,Non-KSI,5329,89.38275746393828
+Random forest,Fixed 0.5,0.5,False positive,Non-KSI,KSI,522,1.7789592066250894
+Random forest,Fixed 0.5,0.5,True positive,KSI,KSI,633,10.617242536061724
