@@ -1,0 +1,4 @@
+test,wald_chisq,df,p_value
+Any year curvature (both sexes),10.956666864965285,6,0.08972496360629506
+Curvature in the female/male log-odds gap,3.7202660072428277,3,0.2932977446624476
+Any sex by vehicle-year interaction,10.964522161997603,4,0.0269656431484969

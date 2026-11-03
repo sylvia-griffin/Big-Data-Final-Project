@@ -1,0 +1,3 @@
+model,calibration_in_the_large,joint_calibration_intercept,calibration_slope
+Logistic regression,-0.003020988604926112,-0.030771980866437666,0.9801278520041405
+Random forest,-0.0073985243289236904,-0.06192360847079558,0.9596324240933963

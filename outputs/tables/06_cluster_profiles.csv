@@ -1,0 +1,3 @@
+cluster_id,vehicles,crashes,vehicles_pct,cluster_name,speed_band_mode,speed_band_mode_pct,crash_type_mode,crash_type_mode_pct,impact_mode,impact_mode_pct,road_context_mode,road_context_mode_pct,lighting_mode,lighting_mode_pct,crash_vehicles_mode,crash_vehicles_mode_pct
+1,83392,52895,54.44159371184969,C1: intersection,60-70,54.7102839600921,Collision with vehicle,91.62749424405219,Front,67.01602072141213,Intersection,100,Daylight,71.40732924021489,Multi vehicle,92.52806024558711
+2,69785,48191,45.55840628815031,C2: non-intersection,60-70,36.302930429175326,Collision with vehicle,73.29941964605574,Front,59.347997420649136,Non-intersection,100,Daylight,69.54073224905065,Multi vehicle,75.85584294619187

@@ -100,4 +100,19 @@ Side impact could be split into near side vs far side relative to the occupant (
 
 **ROAD_GEOMETRY**: 1 Cross intersection, 2 T intersection, 3 Y intersection, 4 Multiple intersections, 5 Not at intersection, 6 Dead end, 7 Road closure, 8 Private property, 9 Unknown
 
-**DCA_CODE**: detailed crash type, 100-199 (see `data/raw/dca_chart_and_sub_dca_codes.pdf`). Main groups: 110s intersection, 120s head-on/opposing, 130s same direction (rear end), 170s off straight road, 180s off bend.
+**DCA_CODE**: crash configuration, distinct from the vehicle's initial impact point. Definitions checked on 03/11/2026 against the [official VicRoads DCA chart](https://opendata.transport.vic.gov.au/dataset/bb77800e-1857-4edc-bf9e-e188437a1c8e/resource/b658d974-4ff1-4de2-9c12-e47bb0fdbbac/download/dca_chart_and_sub_dca_codes.pdf). The following combinations are project-defined groups:
+
+| Project configuration | DCA codes |
+|---|---|
+| Rear-end | 130, 154 |
+| Head-on (not overtaking) | 120 |
+| Adjacent-direction intersection | 110-119 |
+| Opposing-direction turning | 121-125 |
+| Run-off-road | 170-173, 175, 180-183 |
+| Loss of control on carriageway | 174, 184 |
+| Other known configurations | 100-109, 129, 131-137, 139, 140-149, 150-153, 159, 160-167, 169, 179, 189, 190-194, 198 |
+| Unknown | 199 |
+
+The executable whitelist in `R/05_crash_scenarios.R` is authoritative. `outputs/tables/06_dca_mapping_audit.csv` connects every observed code and supplied description to its group and counts. Missing or unfamiliar codes remain explicit categories.
+
+Code 150 includes overtaking sideswipes in the chart, so the head-on analysis uses only 120. Codes 131/132 remain in Other rather than extending the strict rear-end definition. Run-off-road requires explicit departure: 151, 174/184 and nonspecific 179/189 are not included. The Other group is heterogeneous and should not be interpreted as one scenario. DCA describes the crash configuration; front/side/rear impact remains a separate vehicle-level variable.

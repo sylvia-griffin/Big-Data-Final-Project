@@ -1,0 +1,89 @@
+MODEL-BASED STANDARD ERRORS BELOW. For inference use 07_baseline_odds_ratios.csv,
+ which uses crash-cluster-robust HC1 standard errors and confidence intervals.
+
+
+Call:
+glm(formula = formula, family = binomial(link = "logit"), data = cohort,
+    na.action = na.fail, control = glm.control(maxit = 50))
+
+Coefficients:
+                                                    Estimate Std. Error z value
+(Intercept)                                        -3.540308   0.050257 -70.444
+sexFemale                                           0.341531   0.014161  24.118
+age_band26-39                                       0.129597   0.020223   6.408
+age_band40-59                                       0.340216   0.019985  17.023
+age_band60+                                         0.996919   0.020152  49.470
+seatFront passenger                                 0.028060   0.018566   1.511
+speed_band60-70                                     0.319437   0.021202  15.066
+speed_band75-90                                     0.748619   0.023489  31.871
+speed_band100-110                                   1.057293   0.024026  44.006
+crash_configurationHead-on (not overtaking)         1.229504   0.031799  38.665
+crash_configurationAdjacent-direction intersection  0.330482   0.025837  12.791
+crash_configurationOpposing-direction turning       0.283809   0.028800   9.854
+crash_configurationRun-off-road                     1.743749   0.037011  47.115
+crash_configurationLoss of control on carriageway   0.718761   0.121856   5.898
+crash_configurationOther known configurations       0.173582   0.025218   6.883
+impactSide                                          0.136319   0.020092   6.785
+impactRear                                         -0.405343   0.022571 -17.958
+impactOther                                        -0.671597   0.058624 -11.456
+vehicle_count_group2                                0.197833   0.031064   6.369
+vehicle_count_group3+                               0.148022   0.034418   4.301
+vehicle_year_10                                    -0.127978   0.010671 -11.993
+tare_500kg                                         -0.324567   0.011281 -28.772
+crash_year2013                                     -0.007306   0.035286  -0.207
+crash_year2014                                      0.072543   0.034767   2.087
+crash_year2015                                      0.151141   0.034004   4.445
+crash_year2016                                      0.288602   0.033694   8.565
+crash_year2017                                      0.468905   0.034375  13.641
+crash_year2018                                      0.574637   0.034686  16.567
+crash_year2019                                      0.494141   0.034227  14.437
+crash_year2020                                      0.495945   0.036761  13.491
+crash_year2021                                      0.413422   0.035900  11.516
+crash_year2022                                      0.124502   0.036960   3.369
+crash_year2023                                      0.194788   0.036530   5.332
+crash_year2024                                     -0.043445   0.042442  -1.024
+                                                   Pr(>|z|)
+(Intercept)                                         < 2e-16 ***
+sexFemale                                           < 2e-16 ***
+age_band26-39                                      1.47e-10 ***
+age_band40-59                                       < 2e-16 ***
+age_band60+                                         < 2e-16 ***
+seatFront passenger                                0.130699
+speed_band60-70                                     < 2e-16 ***
+speed_band75-90                                     < 2e-16 ***
+speed_band100-110                                   < 2e-16 ***
+crash_configurationHead-on (not overtaking)         < 2e-16 ***
+crash_configurationAdjacent-direction intersection  < 2e-16 ***
+crash_configurationOpposing-direction turning       < 2e-16 ***
+crash_configurationRun-off-road                     < 2e-16 ***
+crash_configurationLoss of control on carriageway  3.67e-09 ***
+crash_configurationOther known configurations      5.85e-12 ***
+impactSide                                         1.16e-11 ***
+impactRear                                          < 2e-16 ***
+impactOther                                         < 2e-16 ***
+vehicle_count_group2                               1.91e-10 ***
+vehicle_count_group3+                              1.70e-05 ***
+vehicle_year_10                                     < 2e-16 ***
+tare_500kg                                          < 2e-16 ***
+crash_year2013                                     0.835972
+crash_year2014                                     0.036927 *
+crash_year2015                                     8.80e-06 ***
+crash_year2016                                      < 2e-16 ***
+crash_year2017                                      < 2e-16 ***
+crash_year2018                                      < 2e-16 ***
+crash_year2019                                      < 2e-16 ***
+crash_year2020                                      < 2e-16 ***
+crash_year2021                                      < 2e-16 ***
+crash_year2022                                     0.000756 ***
+crash_year2023                                     9.70e-08 ***
+crash_year2024                                     0.306018
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 159347  on 175452  degrees of freedom
+Residual deviance: 141056  on 175419  degrees of freedom
+AIC: 141124
+
+Number of Fisher Scoring iterations: 5

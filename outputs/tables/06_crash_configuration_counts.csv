@@ -1,0 +1,9 @@
+crash_configuration,occupants,vehicles,crashes
+Rear-end,51054,43963,22856
+Head-on (not overtaking),9512,7682,4541
+Adjacent-direction intersection,41714,34473,20909
+Opposing-direction turning,24200,20021,11989
+Run-off-road,22246,18160,17639
+Loss of control on carriageway,839,680,660
+Other known configurations,44433,38111,29154
+Unknown (DCA 199),63,51,39

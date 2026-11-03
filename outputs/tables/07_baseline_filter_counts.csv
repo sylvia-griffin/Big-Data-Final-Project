@@ -1,0 +1,13 @@
+step,before,after,removed
+All clean occupants,194061,194061,0
+Require ksi,194061,194061,0
+Require sex,194061,194061,0
+Require age_band,194061,189968,4093
+Require seat,189968,189968,0
+Require speed_band,189968,184553,5415
+Require crash_configuration,184553,184498,55
+Require impact,184498,180087,4411
+Require vehicle_count_group,180087,180087,0
+Require vehicle_year_10,180087,177707,2380
+Require tare_500kg,177707,175453,2254
+Require crash_year,175453,175453,0

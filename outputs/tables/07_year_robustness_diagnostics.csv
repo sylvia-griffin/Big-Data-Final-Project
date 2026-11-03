@@ -1,0 +1,3 @@
+model,occupants,parameters,converged,iterations
+Linear,175453,43,TRUE,5
+Curved,175453,49,TRUE,5
