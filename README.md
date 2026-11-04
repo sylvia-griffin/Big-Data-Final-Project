@@ -45,6 +45,8 @@ source("R/12_predictive_evaluation.R")
 source("R/13_confusion_matrices.R")
 source("R/14_recall_threshold.R")
 source("R/15_balanced_threshold.R")
+source("R/16_impact_interaction.R")
+source("R/17_final_results.R")
 ```
 
 Step 6 fits k-modes to vehicle-level crash features, chooses a cluster count with a documented elbow heuristic, and compares occupants' KSI rates within the resulting scenarios. It saves `06_` tables and charts under `outputs/`, plus `occupants_clustered.csv`, `occupants_clustered.rds`, `vehicle_cluster_assignments.csv` and `cluster_model.rds` under `data/processed/`. Occupants with missing clustering features are retained with an unassigned status. These comparisons are descriptive; adjusted modelling is Step 7.
@@ -70,6 +72,10 @@ The follow-up `R/05_crash_scenarios.R` starts from the full clean dataset, maps 
 `R/14_recall_threshold.R` defines the current illustrative screening scenario: at least 80% recall in pooled training out-of-fold predictions. It selects the highest qualifying cutoff for each existing model and applies it unchanged to the saved test predictions. Use the full-precision cutoffs in `data/processed/predictive_screening_thresholds.rds` for this scenario (approximately 0.1192 logistic and 0.1164 forest). The new `07_recall_target_` tables and confusion chart show about 79.6% test recall, alongside more false positives and precision around 25.6%. The 80% target is a project assumption, not a Victorian authority requirement. This follow-up uses an already-inspected test set and needs fresh validation before operational use. Earlier Youden and 0.5 results remain as comparison scenarios; the models and their probability predictions are unchanged.
 
 `R/15_balanced_threshold.R` adds a separate precision/recall compromise by maximising pooled training out-of-fold F1 for each model. It applies those frozen cutoffs to the existing test predictions, saving `07_balanced_f1_` comparison tables, sex-specific metrics and a confusion chart, plus `predictive_balanced_thresholds.rds`. F1 balances precision and recall through their harmonic mean; it does not imply equal performance, equal error costs, or balanced sensitivity/specificity. Test precision is about 35%, with recall 56–57%, so this scenario misses more KSI cases than the 80%-recall scenario. All three threshold objectives (Youden, 80% recall and F1) remain available; results are retrospective.
+
+`R/16_impact_interaction.R` completes the direct sex-by-impact analysis using the same complete-case cohort and all previous sex interactions. It fits a final primary linear-year association model and a matched curved-year sensitivity model, saving crash-robust joint tests (including Holm adjustments across five interaction questions), coefficients, support counts, diagnostics and `final_association_models.rds`.
+
+`R/17_final_results.R` produces the consistent main research table in `outputs/tables/07_final_research_results.csv` and the readable `report/final_research_results.md`. All main rows come from the final primary model; curved-model comparisons are separately labelled in `07_final_sensitivity_results.csv`. The impact chart and year/weight/seat gap contrasts include crash-robust uncertainty. These are standardised association estimates, with each reference population documented. Earlier inference outputs remain historical stages; use the final table for consolidated reporting. Missing-data sensitivity is deferred. Prediction scripts 12-15 still describe their earlier fitted models and do not validate this updated association model.
 
 ## Folder structure
 

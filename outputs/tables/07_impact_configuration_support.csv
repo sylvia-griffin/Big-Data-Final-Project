@@ -1,0 +1,57 @@
+crash_configuration,impact,sex,occupants,ksi_cases
+Rear-end,Front,Male,9294,841
+Rear-end,Front,Female,7567,1184
+Rear-end,Side,Male,147,10
+Rear-end,Side,Female,115,11
+Rear-end,Rear,Male,13262,865
+Rear-end,Rear,Female,15740,1639
+Rear-end,Other,Male,100,5
+Rear-end,Other,Female,71,4
+Head-on (not overtaking),Front,Male,4099,1248
+Head-on (not overtaking),Front,Female,3208,1245
+Head-on (not overtaking),Side,Male,483,94
+Head-on (not overtaking),Side,Female,382,81
+Head-on (not overtaking),Rear,Male,211,14
+Head-on (not overtaking),Rear,Female,136,12
+Head-on (not overtaking),Other,Male,25,2
+Head-on (not overtaking),Other,Female,18,4
+Adjacent-direction intersection,Front,Male,13146,1420
+Adjacent-direction intersection,Front,Female,14140,2464
+Adjacent-direction intersection,Side,Male,4161,791
+Adjacent-direction intersection,Side,Female,4770,1115
+Adjacent-direction intersection,Rear,Male,970,113
+Adjacent-direction intersection,Rear,Female,1030,146
+Adjacent-direction intersection,Other,Male,24,1
+Adjacent-direction intersection,Other,Female,17,0
+Opposing-direction turning,Front,Male,8537,907
+Opposing-direction turning,Front,Female,9291,1709
+Opposing-direction turning,Side,Male,1749,225
+Opposing-direction turning,Side,Female,1892,367
+Opposing-direction turning,Rear,Male,438,29
+Opposing-direction turning,Rear,Female,399,40
+Opposing-direction turning,Other,Male,11,0
+Opposing-direction turning,Other,Female,6,0
+Run-off-road,Front,Male,8786,3586
+Run-off-road,Front,Female,6849,2917
+Run-off-road,Side,Male,1213,561
+Run-off-road,Side,Female,776,334
+Run-off-road,Rear,Male,389,102
+Run-off-road,Rear,Female,324,90
+Run-off-road,Other,Male,664,187
+Run-off-road,Other,Female,504,158
+Loss of control on carriageway,Front,Male,90,26
+Loss of control on carriageway,Front,Female,65,11
+Loss of control on carriageway,Side,Male,35,7
+Loss of control on carriageway,Side,Female,16,7
+Loss of control on carriageway,Rear,Male,14,4
+Loss of control on carriageway,Rear,Female,12,1
+Loss of control on carriageway,Other,Male,225,24
+Loss of control on carriageway,Other,Female,184,15
+Other known configurations,Front,Male,13135,1482
+Other known configurations,Front,Female,12028,1847
+Other known configurations,Side,Male,2983,310
+Other known configurations,Side,Female,2996,419
+Other known configurations,Rear,Male,3785,358
+Other known configurations,Rear,Female,4300,542
+Other known configurations,Other,Male,354,26
+Other known configurations,Other,Female,287,30
