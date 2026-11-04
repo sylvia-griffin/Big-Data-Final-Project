@@ -27,12 +27,12 @@ All data preparation and analysis is done in **R** (packages: `dplyr`, `readr`, 
 1. Put the raw CSVs in `data/raw/`.
 2. Open the project folder in RStudio (so the working directory is the project folder).
 3. Install any missing packages once: `install.packages(c("dplyr", "readr", "ggplot2", "klaR", "cluster", "sandwich", "ranger"))`.
-4. Run the following from the project root, in order. The cleaning and EDA scripts currently live at the root; preparation and clustering live in `R/`.
+4. Run the following from the project root, in order. All analysis scripts live in `R/`.
 
 ```r
 source("R/01_prepare_data.R")
-source("02_clean.R")
-source("03_explore.R")
+source("R/02_clean.R")
+source("R/03_explore.R")
 source("R/04_cluster.R")
 source("R/05_crash_scenarios.R")
 source("R/06_model.R")
@@ -83,7 +83,7 @@ The follow-up `R/05_crash_scenarios.R` starts from the full clean dataset, maps 
 |---|---|
 | `data/raw/` | Original CSVs, never edited |
 | `data/processed/` | Tables made by the R scripts (e.g. `occupants_final.csv`) |
-| `R/` | Preparation, clustering, scenario and modelling scripts (`01_prepare_data.R`, `04_cluster.R`, `05_crash_scenarios.R`, `06_model.R`, `07_vehicle_year_interaction.R`, `08_weight_interaction.R`); `02_clean.R` and `03_explore.R` currently live at the project root |
+| `R/` | All preparation, cleaning, exploration, clustering, modelling and reporting scripts (`01_prepare_data.R` through `17_final_results.R`) |
 | `outputs/figures/` | Charts for the report |
 | `outputs/tables/` | Summary tables and model outputs (CSV) |
 | `screenshots/` | Screenshots of practical work for the Methodology section |
