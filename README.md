@@ -18,7 +18,7 @@ Sub-questions:
 
 ## Data
 Victorian Road Crash Data (2012-01-01 to 2024-09-30), 9 CSV tables, about 168 MB in total.
-Raw files are **not committed** to this repo. Download them from https://liveswinburneeduau-my.sharepoint.com/:f:/r/personal/106064277_student_swin_edu_au/Documents/Big%20Data%20HD%20Project!/COS80023%20crash%20data?d=wa0ef3d96307b4731bcc9655f8be5fe3f&csf=1&web=1&e=NCzYqk into `data/raw/`.
+Raw files are **not committed** to this repo. Download them from [https://liveswinburneeduau-my.sharepoint.com/:f:/r/personal/106064277_student_swin_edu_au/Documents/Big%20Data%20HD%20Project!/COS80023%20crash%20data?d=wa0ef3d96307b4731bcc9655f8be5fe3f&csf=1&web=1&e=NCzYqk](https://opendata.transport.vic.gov.au/dataset/victoria-road-crash-data) into `data/raw/`.
 
 ## Tools
 All data preparation and analysis is done in **R** (packages: `dplyr`, `readr`, `ggplot2`, plus `klaR` and `cluster` for Step 6 and `sandwich` and `ranger` for Step 7). Our tutor confirmed on 2 Nov 2026 that the joining and filtering can be done in R instead of Hive on HDInsight.
@@ -84,8 +84,3 @@ The follow-up `R/05_crash_scenarios.R` starts from the full clean dataset, maps 
 | `report/` | Report drafts |
 | `docs/` | Data log and codebook |
 
-## Conventions
-- **Screenshots:** name them `step_description_date.png`, e.g. `03_prepare_data_counts_2026-11-02.png`. The template asks for screenshots of practical work, so take them as you go.
-- **Data log:** every time you filter, drop or recode data, add a row to `docs/data_log.md` with the row count before and after.
-- **Scripts:** each script should run top to bottom from the raw data without manual steps.
-- **Commits:** small and descriptive, e.g. "Add vehicle era bands to cleaning script".
