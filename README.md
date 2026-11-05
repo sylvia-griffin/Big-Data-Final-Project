@@ -18,7 +18,7 @@ Sub-questions:
 
 ## Data
 Victorian Road Crash Data (2012-01-01 to 2024-09-30), 9 CSV tables, about 168 MB in total.
-Raw files are **not committed** to this repo. Download them from [https://liveswinburneeduau-my.sharepoint.com/:f:/r/personal/106064277_student_swin_edu_au/Documents/Big%20Data%20HD%20Project!/COS80023%20crash%20data?d=wa0ef3d96307b4731bcc9655f8be5fe3f&csf=1&web=1&e=NCzYqk](https://opendata.transport.vic.gov.au/dataset/victoria-road-crash-data) into `data/raw/`.
+Raw files are **not committed** to this repo. Download them from https://opendata.transport.vic.gov.au/dataset/victoria-road-crash-data into `data/raw/`.
 
 ## Tools
 All data preparation and analysis is done in **R** (packages: `dplyr`, `readr`, `ggplot2`, plus `klaR` and `cluster` for Step 6 and `sandwich` and `ranger` for Step 7). Our tutor confirmed on 2 Nov 2026 that the joining and filtering can be done in R instead of Hive on HDInsight.
