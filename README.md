@@ -27,12 +27,12 @@ All data preparation and analysis is done in **R** (packages: `dplyr`, `readr`, 
 1. Put the raw CSVs in `data/raw/`.
 2. Open the project folder in RStudio (so the working directory is the project folder).
 3. Install any missing packages once: `install.packages(c("dplyr", "readr", "ggplot2", "klaR", "cluster", "sandwich", "ranger"))`.
-4. Run the following from the project root, in order. The cleaning and EDA scripts currently live at the root; preparation and clustering live in `R/`.
+4. Run the following from the project root, in order. All analysis scripts live in `R/`.
 
 ```r
 source("R/01_prepare_data.R")
-source("02_clean.R")
-source("03_explore.R")
+source("R/02_clean.R")
+source("R/03_explore.R")
 source("R/04_cluster.R")
 source("R/05_crash_scenarios.R")
 source("R/06_model.R")
@@ -45,6 +45,8 @@ source("R/12_predictive_evaluation.R")
 source("R/13_confusion_matrices.R")
 source("R/14_recall_threshold.R")
 source("R/15_balanced_threshold.R")
+source("R/16_impact_interaction.R")
+source("R/17_final_results.R")
 ```
 
 Step 6 fits k-modes to vehicle-level crash features, chooses a cluster count with a documented elbow heuristic, and compares occupants' KSI rates within the resulting scenarios. It saves `06_` tables and charts under `outputs/`, plus `occupants_clustered.csv`, `occupants_clustered.rds`, `vehicle_cluster_assignments.csv` and `cluster_model.rds` under `data/processed/`. Occupants with missing clustering features are retained with an unassigned status. These comparisons are descriptive; adjusted modelling is Step 7.
@@ -71,13 +73,17 @@ The follow-up `R/05_crash_scenarios.R` starts from the full clean dataset, maps 
 
 `R/15_balanced_threshold.R` adds a separate precision/recall compromise by maximising pooled training out-of-fold F1 for each model. It applies those frozen cutoffs to the existing test predictions, saving `07_balanced_f1_` comparison tables, sex-specific metrics and a confusion chart, plus `predictive_balanced_thresholds.rds`. F1 balances precision and recall through their harmonic mean; it does not imply equal performance, equal error costs, or balanced sensitivity/specificity. Test precision is about 35%, with recall 56–57%, so this scenario misses more KSI cases than the 80%-recall scenario. All three threshold objectives (Youden, 80% recall and F1) remain available; results are retrospective.
 
+`R/16_impact_interaction.R` completes the direct sex-by-impact analysis using the same complete-case cohort and all previous sex interactions. It fits a final primary linear-year association model and a matched curved-year sensitivity model, saving crash-robust joint tests (including Holm adjustments across five interaction questions), coefficients, support counts, diagnostics and `final_association_models.rds`.
+
+`R/17_final_results.R` produces the consistent main research table in `outputs/tables/07_final_research_results.csv` and the readable `report/final_research_results.md`. All main rows come from the final primary model; curved-model comparisons are separately labelled in `07_final_sensitivity_results.csv`. The impact chart and year/weight/seat gap contrasts include crash-robust uncertainty. These are standardised association estimates, with each reference population documented. Earlier inference outputs remain historical stages; use the final table for consolidated reporting. Missing-data sensitivity is deferred. Prediction scripts 12-15 still describe their earlier fitted models and do not validate this updated association model.
+
 ## Folder structure
 
 | Folder | What goes in it |
 |---|---|
 | `data/raw/` | Original CSVs, never edited |
 | `data/processed/` | Tables made by the R scripts (e.g. `occupants_final.csv`) |
-| `R/` | Preparation, clustering, scenario and modelling scripts (`01_prepare_data.R`, `04_cluster.R`, `05_crash_scenarios.R`, `06_model.R`, `07_vehicle_year_interaction.R`, `08_weight_interaction.R`); `02_clean.R` and `03_explore.R` currently live at the project root |
+| `R/` | All preparation, cleaning, exploration, clustering, modelling and reporting scripts (`01_prepare_data.R` through `17_final_results.R`) |
 | `outputs/figures/` | Charts for the report |
 | `outputs/tables/` | Summary tables and model outputs (CSV) |
 | `screenshots/` | Screenshots of practical work for the Methodology section |
